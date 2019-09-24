@@ -13,13 +13,13 @@ def PointsInCircum(r, n=150, multiplier=2):
 
 
 def draw_times_table(multiplier, amt):
+    turtle.speed(1000)
     homex = -0
     homey = -250
 
     list1 = PointsInCircumList(250, amt)
 
     turtle.penup()
-    turtle.speed(10)
     turtle.color("cyan")
     turtle.goto(homex, homey)
     turtle.pendown()
@@ -45,7 +45,7 @@ def draw_times_table(multiplier, amt):
     turtle.done()
 
 
-draw_times_table(34, 200)
+draw_times_table(10, 150)
 
 
 
