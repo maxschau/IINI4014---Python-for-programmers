@@ -75,15 +75,15 @@ def hermann_grid(grid_colour, squares_colour, circle_colour, image_size, squares
     For each x-value we want to draw an circle per y-value, which will be the intersections
     '''
     for i in range(len(x_values)):
-        t.pencolor(circle_colour)
+        t.pencolor(circle_colour) #Chooses the colur of the circles
         t.penup()
         for j in range(len(y_values)):
-            t.setpos(x_values[i], y_values[j])
+            t.setpos(x_values[i], y_values[j]) #Moves to each intersection
             t.pendown()
-            t.circle(1)
+            t.circle(1) #Draws the circle
             t.penup()
 
     turtle.done()
 
 
-hermann_grid("white", "black", "blue", 500, 30, 10)
+hermann_grid("white", "black", "grey", 500, 30, 2)
